@@ -10,4 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: npm ci
-    - run: pm2 restart backendserver
+    - run: npm run build
+    - run: ./nodebb start
