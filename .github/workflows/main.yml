@@ -9,5 +9,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v4
-    - run: npm run build
-    - run: ./nodebb start
+    - run: ./nodebb build
