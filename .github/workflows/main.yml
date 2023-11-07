@@ -8,5 +8,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v4
-    #- run: ./nodebb build
+    - name: test 
+      run: |
+        cd /home/ubuntu/nodebb/node_modules/nodebb-plugin-quickstart
+        touch hello.txt
